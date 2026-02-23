@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Quality Prediction</title>
+</head>
+<body>
+
+    <h1>Wine Quality Prediction</h1>
+
+    <form action="/predict" method="post">
+        <input type="text" name="fixed_acidity" placeholder="Fixed Acidity" required><br><br>
+        <input type="text" name="volatile_acidity" placeholder="Volatile Acidity" required><br><br>
+        <input type="text" name="citric_acid" placeholder="Citric Acid" required><br><br>
+        <input type="text" name="residual_sugar" placeholder="Residual Sugar" required><br><br>
+        <input type="text" name="chlorides" placeholder="Chlorides" required><br><br>
+        <input type="text" name="free_sulfur_dioxide" placeholder="Free Sulfur Dioxide" required><br><br>
+        <input type="text" name="total_sulfur_dioxide" placeholder="Total Sulfur Dioxide" required><br><br>
+        <input type="text" name="density" placeholder="Density" required><br><br>
+        <input type="text" name="pH" placeholder="pH" required><br><br>
+        <input type="text" name="sulfates" placeholder="Sulfates" required><br><br>
+        <input type="text" name="alcohol" placeholder="Alcohol" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
